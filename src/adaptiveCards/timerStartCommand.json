@@ -1,0 +1,42 @@
+{
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "type": "TextBlock",
+      "text": "Select Timer Length",
+      "weight": "bolder",
+      "size": "medium"
+    },
+    {
+      "type": "Input.ChoiceSet",
+      "id": "timerLength",
+      "style": "compact",
+      "choices": [
+        {
+          "title": "1 minute",
+          "value": "1"
+        },
+        {
+          "title": "3 minutes",
+          "value": "3"
+        },
+        {
+          "title": "5 minutes",
+          "value": "5"
+        },
+        {
+          "title": "10 minutes",
+          "value": "10"
+        }
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Submit",
+      "title": "Start Timer"
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.3"
+}
